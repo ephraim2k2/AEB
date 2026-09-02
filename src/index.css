@@ -72,11 +72,91 @@ img {
 }
 
 /* ══════════════════════════════════
+   PAGE LOADER & NAVIGATION OVERLAY
+══════════════════════════════════ */
+.page-loader-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(2, 44, 30, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInLoader 0.25s ease forwards;
+}
+
+@keyframes fadeInLoader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.page-loader-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #047857 0%, #34d399 50%, #fbbf24 100%);
+  animation: loaderProgress 0.75s ease-in-out infinite;
+}
+
+@keyframes loaderProgress {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.page-loader-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.loader-spinner-solo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid rgba(52, 211, 153, 0.18);
+  border-top-color: #34d399;
+  border-right-color: #fbbf24;
+  animation: spinLoader 0.85s linear infinite;
+}
+
+@keyframes spinLoader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-subtitle {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #34d399;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* ══════════════════════════════════
    NAVBAR — Floating Pill Capsule
 ══════════════════════════════════ */
 .navbar-wrapper {
   position: fixed;
-  top: 16px;
+  top: 20px;
   left: 0;
   right: 0;
   z-index: 1000;

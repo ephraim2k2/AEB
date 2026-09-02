@@ -9,6 +9,7 @@ import Gallery from './components/Gallery';
 import Partners from './components/Partners';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import PageLoader from './components/PageLoader';
 
 // Individual Dedicated Pages
 import AboutPage from './pages/AboutPage';
@@ -22,32 +23,44 @@ import { useGsapReveal } from './utils/useGsapReveal';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
+  const [isLoading, setIsLoading] = useState(false);
 
   // Trigger GSAP ScrollTrigger Animations across all sections and pages
   useGsapReveal(currentPage);
 
-  useEffect(() => {
-    // Scroll to top on page change
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }, [currentPage]);
-
   const handleNavigate = (pageId, sectionId) => {
-    setCurrentPage(pageId);
-
-    if (pageId === 'home' && sectionId) {
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          const yOffset = -90;
-          const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-          window.scrollTo({ top: y, behavior: 'smooth' });
-        }
-      }, 50);
+    // If clicking same page with no section scroll, skip transition
+    if (pageId === currentPage && !sectionId) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
     }
+
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setCurrentPage(pageId);
+      window.scrollTo({ top: 0, behavior: 'instant' });
+
+      if (pageId === 'home' && sectionId) {
+        setTimeout(() => {
+          const element = document.getElementById(sectionId);
+          if (element) {
+            const yOffset = -90;
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+        }, 50);
+      }
+
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 300);
+    }, 450);
   };
 
   return (
     <div className="app-root">
+      <PageLoader isLoading={isLoading} />
       <Navbar currentPage={currentPage} onNavigate={handleNavigate} />
       <main>
         {currentPage === 'home' && (
