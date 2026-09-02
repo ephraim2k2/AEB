@@ -23,7 +23,16 @@ import { useGsapReveal } from './utils/useGsapReveal';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
-  const [isLoading, setIsLoading] = useState(false);
+  // Start with true so loader displays on initial page load / refresh
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Initial mount loader timeout
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 600);
+    return () => clearTimeout(timer);
+  }, []);
 
   // Trigger GSAP ScrollTrigger Animations across all sections and pages
   useGsapReveal(currentPage);
