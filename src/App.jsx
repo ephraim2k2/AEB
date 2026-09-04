@@ -8,6 +8,7 @@ import ProjectSlider from './components/ProjectSlider';
 import Gallery from './components/Gallery';
 import Partners from './components/Partners';
 import Contact from './components/Contact';
+import MemberStates from './components/MemberStates';
 import Footer from './components/Footer';
 import PageLoader from './components/PageLoader';
 
@@ -17,6 +18,7 @@ import CareersPage from './pages/CareersPage';
 import MediaPage from './pages/MediaPage';
 import ContactPage from './pages/ContactPage';
 import GalleryPage from './pages/GalleryPage';
+import ProjectsPage from './pages/ProjectsPage';
 
 // GSAP Animations
 import { useGsapReveal } from './utils/useGsapReveal';
@@ -81,12 +83,14 @@ export default function App() {
             <ProjectSlider />
             <Gallery onNavigate={handleNavigate} />
             <Partners />
+            <MemberStates onNavigate={handleNavigate} />
             <Contact />
           </>
         )}
 
         {currentPage === 'about' && <AboutPage onNavigate={handleNavigate} />}
         {currentPage === 'gallery' && <GalleryPage onNavigate={handleNavigate} />}
+        {currentPage === 'projects' && <ProjectsPage onNavigate={handleNavigate} />}
         {currentPage === 'careers' && <CareersPage />}
         {currentPage === 'media' && <MediaPage />}
         {currentPage === 'contact' && <ContactPage />}

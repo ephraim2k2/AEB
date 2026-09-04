@@ -133,7 +133,7 @@ export default function CareersPage() {
               Thank you for your interest in joining the Africa Energy Bank. We currently do not have any open positions available. All inaugural Secretariat roles for this recruitment phase have been filled.
             </p>
 
-            <div className="no-openings-box">
+            {/* <div className="no-openings-box">
               <h3>Join Our Executive Talent Pool</h3>
               <p>
                 We routinely review profiles for upcoming project credit, ESG, treasury, and supranational legal roles as we expand operational desks across APPO member states.
@@ -152,7 +152,7 @@ export default function CareersPage() {
                   <span>Contact HR Secretariat</span>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

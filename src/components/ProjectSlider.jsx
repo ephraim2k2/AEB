@@ -5,6 +5,7 @@ import projSolar from '../assets/gallery_solar.png';
 import projHydro from '../assets/gallery_hydro.png';
 import projWind from '../assets/gallery_wind.png';
 import projRefinery from '../assets/gallery_refinery.png';
+import dangoteRefinery from '../assets/dangote_refinery.png';
 
 export default function ProjectSlider() {
   const projects = [
@@ -22,15 +23,15 @@ export default function ProjectSlider() {
     },
     {
       id: 1,
-      tag: 'Hydro · Ethiopia',
-      title: 'Great Ethiopian Renaissance Dam — Phase 2',
-      desc: '$600M transmission infrastructure financing enabling GERD power to reach 4 East African nations via the Eastern Africa Power Pool regional grid interconnection.',
-      chips: ['$600M Financing', '4 Nations Connected', '5,150MW Capacity'],
-      img: projHydro,
-      miniIcon: <Droplets size={22} />,
-      country: 'Ethiopia · East Africa',
-      shortDesc: '$600M transmission infrastructure financing enabling GERD power to reach 4 East African nations.',
-      badge: 'Under Construction',
+      tag: 'Refinery · Nigeria',
+      title: 'Dangote Refinery — Lagos, Nigeria',
+      desc: 'Africa\'s largest single-train petroleum refinery with 650,000 barrels per day capacity, reducing the continent\'s dependence on imported refined petroleum products and creating thousands of jobs.',
+      chips: ['$19B Investment', '650k bpd Capacity', '100,000+ Jobs'],
+      img: dangoteRefinery,
+      miniIcon: <Flame size={22} />,
+      country: 'Nigeria · West Africa',
+      shortDesc: 'Africa\'s largest 650,000 bpd refinery transforming Nigeria into a net exporter of refined petroleum products.',
+      badge: 'Operational 2024',
     },
     {
       id: 2,

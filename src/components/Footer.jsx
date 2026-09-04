@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/logo.png';
+import logoFooter from '../assets/logo_footer.png';
 
 export default function Footer({ onNavigate }) {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -31,7 +31,7 @@ export default function Footer({ onNavigate }) {
         <div className="container">
           <div className="footer-grid">
             <div className="footer-brand">
-              <img src={logo} alt="Africa Energy Bank" className="footer-logo-img" />
+              <img src={logoFooter} alt="Africa Energy Bank" className="footer-logo-img" />
               <p>
                 Africa's premier supranational development finance institution dedicated to powering sustainable energy infrastructure across 54 African nations.
               </p>

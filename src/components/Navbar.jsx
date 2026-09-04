@@ -73,25 +73,19 @@ export default function Navbar({ currentPage, onNavigate }) {
         { label: 'Who We Are', pageId: 'about', sectionId: 'who-we-are' },
         { label: 'Key Objectives', pageId: 'about', sectionId: 'key-objectives' },
         { label: 'Impact', pageId: 'home', sectionId: 'impact' },
-      ],
-    },
-    {
-      label: 'Projects',
-      key: 'projects',
-      children: [
-        { label: 'Our Projects', pageId: 'home', sectionId: 'projects' },
-        { label: 'Gallery', pageId: 'gallery', sectionId: null },
-      ],
-    },
-    {
-      label: 'Engage',
-      key: 'engage',
-      children: [
         { label: 'Partners', pageId: 'home', sectionId: 'partners' },
-        { label: 'Careers', pageId: 'careers', sectionId: null },
-        { label: 'Media', pageId: 'media', sectionId: null },
       ],
     },
+    { label: 'Our Projects', pageId: 'projects', sectionId: null },
+    {
+      label: 'Media',
+      key: 'media',
+      children: [
+        { label: 'Press & Media', pageId: 'media', sectionId: null },
+        { label: 'Media Gallery', pageId: 'gallery', sectionId: null },
+      ],
+    },
+    { label: 'Careers', pageId: 'careers', sectionId: null },
     { label: 'Contact', pageId: 'contact', sectionId: null },
   ];
 
