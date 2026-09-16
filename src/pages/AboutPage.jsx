@@ -74,9 +74,9 @@ export default function AboutPage({ onNavigate }) {
                   <ArrowRight size={14} color="#ffffff" />
                 </div>
               </a>
-              <button onClick={() => onNavigate && onNavigate('contact')} className="btn--pill-secondary">
+              {/* { <button onClick={() => onNavigate && onNavigate('contact')} className="btn--pill-secondary">
                 <span>Contact Secretariat</span>
-              </button>
+              </button> } */}
             </div>
           </div>
         </div>
