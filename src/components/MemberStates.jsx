@@ -31,7 +31,7 @@ export default function MemberStates({ onNavigate }) {
         <div className="section-header" style={{ marginBottom: '48px' }}>
           <span className="section-label">Sovereign Shareholding</span>
           <h2 className="section-title">
-            APPO Sovereign <span className="gradient-text">Member States</span>
+            APPO<span className="gradient-text">Member States</span>
           </h2>
           <p className="section-subtitle">
             Capitalized by member countries of the African Petroleum Producers' Organization alongside Afreximbank and African sovereign wealth funds.

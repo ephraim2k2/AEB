@@ -11,6 +11,18 @@ export default function ProjectSlider() {
   const projects = [
     {
       id: 0,
+      tag: 'Refinery · West Africa',
+      title: 'Regional Oil Refinery & Downstream Grid',
+      desc: '$2.4B facility financing modern downstream oil refining, pipeline interconnections, and intra-African petroleum product commerce across APPO member states.',
+      chips: ['$2.4B Facility', '650k bpd Processing', '6,200 Jobs Created'],
+      img: projRefinery,
+      miniIcon: <Flame size={22} />,
+      country: 'West & Central Africa',
+      shortDesc: '$2.4B facility financing modern downstream refining and regional petroleum commerce.',
+      badge: 'Operational 2024',
+    },
+    {
+      id: 1,
       tag: 'Solar · Nigeria',
       title: 'Northern Nigeria Solar Corridor — 500MW',
       desc: 'The largest solar energy project in West Africa, delivering clean electricity to 5 million households across six northern states through a $1.8B blended finance package.',
@@ -22,7 +34,7 @@ export default function ProjectSlider() {
       badge: '500MW Solar',
     },
     {
-      id: 1,
+      id: 2,
       tag: 'Refinery · Nigeria',
       title: 'Dangote Refinery — Lagos, Nigeria',
       desc: 'Africa\'s largest single-train petroleum refinery with 650,000 barrels per day capacity, reducing the continent\'s dependence on imported refined petroleum products and creating thousands of jobs.',
@@ -34,7 +46,7 @@ export default function ProjectSlider() {
       badge: 'Operational 2024',
     },
     {
-      id: 2,
+      id: 3,
       tag: 'Clean Energy · Namibia',
       title: 'Namibia Wind & Clean Energy Export Hub',
       desc: '$2.1B facility for utility-scale wind power capacity, green ammonia production, and dedicated export terminal — positioning Southern Africa as a global clean energy leader.',
@@ -44,18 +56,6 @@ export default function ProjectSlider() {
       country: 'Namibia · Southern Africa',
       shortDesc: '$2.1B facility for wind power capacity, green ammonia production, and export terminal.',
       badge: 'Financial Close 2025',
-    },
-    {
-      id: 3,
-      tag: 'Refinery · West Africa',
-      title: 'Regional Oil Refinery & Downstream Grid',
-      desc: '$2.4B facility financing modern downstream oil refining, pipeline interconnections, and intra-African petroleum product commerce across APPO member states.',
-      chips: ['$2.4B Facility', '650k bpd Processing', '6,200 Jobs Created'],
-      img: projRefinery,
-      miniIcon: <Flame size={22} />,
-      country: 'West & Central Africa',
-      shortDesc: '$2.4B facility financing modern downstream refining and regional petroleum commerce.',
-      badge: 'Operational 2024',
     },
   ];
 

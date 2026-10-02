@@ -146,12 +146,13 @@ export default function Contact() {
                 <option value="" disabled>
                   Select a type
                 </option>
+                <option>Oil &amp; Gas Midstream</option>
                 <option>Solar / Wind Energy</option>
                 <option>Hydropower / Storage</option>
                 <option>Green Hydrogen</option>
                 <option>Grid Infrastructure</option>
                 <option>Off-grid / Mini-grid</option>
-                <option>Oil &amp; Gas Midstream</option>
+                
                 <option>Technical Assistance</option>
               </select>
             </div>

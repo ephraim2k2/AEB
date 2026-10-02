@@ -10,6 +10,12 @@ import galleryCommunity from '../assets/gallery_community.png';
 
 const galleryItems = [
   {
+    src: galleryRefinery,
+    title: 'Modern Refinery Complex',
+    category: 'Oil & Gas',
+    description: 'State-of-the-art downstream processing facility boosting intra-African energy trade.',
+  },
+  {
     src: gallerySolar,
     title: 'Solar Farm — East Africa',
     category: 'Renewable Energy',
@@ -32,12 +38,6 @@ const galleryItems = [
     title: 'Hydroelectric Dam',
     category: 'Infrastructure',
     description: 'Major hydroelectric dam providing baseload power and water management for the region.',
-  },
-  {
-    src: galleryRefinery,
-    title: 'Modern Refinery Complex',
-    category: 'Oil & Gas',
-    description: 'State-of-the-art downstream processing facility boosting intra-African energy trade.',
   },
   {
     src: galleryCommunity,

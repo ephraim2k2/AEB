@@ -168,7 +168,7 @@ export default function Navbar({ currentPage, onNavigate }) {
 
           <div className="mobile-menu-cta">
             <a href="#contact" onClick={(e) => handleNavClick(e, 'contact', null)} className="btn--pill-primary w-full">
-              <span>Apply for Financing</span>
+              <span>Contact</span>
               <div className="btn-circle-icon">
                 <ArrowRight size={14} color="#ffffff" />
               </div>
@@ -178,7 +178,7 @@ export default function Navbar({ currentPage, onNavigate }) {
 
         <div className="nav-right">
           <a href="#contact" onClick={(e) => handleNavClick(e, 'contact', null)} className="btn--pill-primary desktop-cta">
-            <span>Apply for Financing</span>
+            <span>Contact</span>
             <div className="btn-circle-icon">
               <ArrowRight size={14} color="#ffffff" />
             </div>

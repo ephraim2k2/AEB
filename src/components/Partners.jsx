@@ -1,4 +1,5 @@
 import React from 'react';
+import isdbLogo from '../assets/isdb_logo.png';
 
 const partnersData = [
   {
@@ -41,72 +42,14 @@ const partnersData = [
         <line x1="7" y1="21" x2="25" y2="21" stroke="#ffffff" strokeWidth="1" />
       </svg>
     ),
-  },
-  {
-    id: 'ifc',
-    name: 'International Finance Corp.',
-    sub: 'IFC / World Bank',
+  },  {
+    id: 'isdb',
+    name: 'Islamic Development Bank',
+    sub: 'IsDB Group',
     logo: (
-      <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="32" height="32" rx="16" fill="#1e3a8a" />
-        <path d="M8 10H24V14H13V18H21V22H8V10Z" fill="#ffffff" />
-        <path d="M21 18L26 23H20L17 18H21Z" fill="#38bdf8" />
-      </svg>
+      <img src={isdbLogo} alt="IsDB Logo" style={{ width: '32px', height: '32px', objectFit: 'contain' }} />
     ),
-  },
-  {
-    id: 'au',
-    name: 'African Union',
-    sub: 'AU Governance',
-    logo: (
-      <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="16" cy="16" r="15" fill="#d97706" />
-        <circle cx="16" cy="16" r="12.5" fill="#047857" />
-        <path d="M15 9C13 10 11 12 10.5 15C10 18 11.5 21 14.5 23C16 21 17.5 19 19.5 17.5C21.5 16 23 15.5 24 14.5C23.5 12 21.5 10 19 9C17.5 10 16 10.5 15 9Z" fill="#ffffff" />
-        <path d="M7 16C7 11 11 7 16 7" stroke="#fbbf24" strokeWidth="1.5" strokeLinecap="round" />
-        <path d="M25 16C25 21 21 25 16 25" stroke="#fbbf24" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    id: 'irena',
-    name: 'IRENA',
-    sub: 'Intl Renewable Energy',
-    logo: (
-      <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="32" height="32" rx="16" fill="#0891b2" />
-        <circle cx="16" cy="16" r="6" fill="#f59e0b" />
-        <path d="M16 4V8M16 24V28M4 16H8M24 16H28M7.5 7.5L10.3 10.3M21.7 21.7L24.5 24.5M7.5 24.5L10.3 21.7M21.7 10.3L24.5 7.5" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    id: 'gcf',
-    name: 'Green Climate Fund',
-    sub: 'GCF Finance',
-    logo: (
-      <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="32" height="32" rx="16" fill="#059669" />
-        <path d="M16 6C10.5 6 6 10.5 6 16C6 21.5 10.5 26 16 26C21.5 26 26 21.5 26 16" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
-        <path d="M16 10C12.7 10 10 12.7 10 16C10 19.3 12.7 22 16 22C19.3 22 22 19.3 22 16C22 12.7 19.3 10 16 10Z" fill="#34d399" />
-        <path d="M16 13V19M13 16H19" stroke="#022c1e" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    id: 'eib',
-    name: 'European Investment Bank',
-    sub: 'EIB Group',
-    logo: (
-      <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="32" height="32" rx="16" fill="#1d4ed8" />
-        <path d="M9 23V11H13V23H9ZM14 23V11H18V23H14ZM19 23V11H23V23H19Z" fill="#ffffff" />
-        <path d="M7 9H25V11H7V9Z" fill="#eab308" />
-        <circle cx="16" cy="6" r="1.5" fill="#eab308" />
-      </svg>
-    ),
-  },
-  {
+  },  {
     id: 'dbsa',
     name: 'DBSA',
     sub: 'Dev Bank of Southern Africa',
@@ -118,18 +61,7 @@ const partnersData = [
       </svg>
     ),
   },
-  {
-    id: 'kfw',
-    name: 'KfW Entwicklungsbank',
-    sub: 'KfW Germany',
-    logo: (
-      <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="32" height="32" rx="16" fill="#b91c1c" />
-        <path d="M8 8H14V24H8V8Z" fill="#ffffff" />
-        <path d="M14 16L22 8H25L17 16L25 24H22L14 16Z" fill="#ffffff" />
-      </svg>
-    ),
-  },
+
   {
     id: 'usaid',
     name: 'USAID Power Africa',
