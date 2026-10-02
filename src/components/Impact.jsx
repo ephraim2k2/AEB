@@ -1,16 +1,16 @@
 import React from 'react';
-import { Zap, ShieldCheck, Users } from 'lucide-react';
+import { Zap, ShieldCheck, Users, Flame } from 'lucide-react';
 
 export default function Impact() {
   const impactCards = [
     {
-      icon: <Zap size={13} />,
-      tag: 'Clean Energy Mandate',
+      icon: <Flame size={13} />,
+      tag: 'Oil & Gas Mandate',
       amberTag: false,
-      num: '74%',
-      title: 'Clean Energy Portfolio',
-      body: '74% of capital targets solar, wind, hydro, and grid storage projects aligned with Paris Agreement goals.',
-      progress: '74%',
+      num: '70%',
+      title: 'Oil & Gas Infrastructure',
+      body: '70% of capital targets critical upstream, midstream, and downstream oil and gas projects to guarantee African energy security.',
+      progress: '70%',
       amberFill: false,
     },
     {

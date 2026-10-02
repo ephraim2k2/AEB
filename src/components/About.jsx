@@ -1,6 +1,6 @@
 import React from 'react';
 import { Calendar, ShieldCheck, Flame, Globe, ArrowRight, Play } from 'lucide-react';
-import aboutImg from '../assets/gallery_wind.png';
+import aboutImg from '../assets/our_mandate.png';
 
 export default function About({ onNavigate }) {
   const handleNavClick = (e, targetId) => {
