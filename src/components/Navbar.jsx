@@ -87,7 +87,6 @@ export default function Navbar({ currentPage, onNavigate }) {
       ],
     },
     { label: 'Careers', pageId: 'careers', sectionId: null },
-    { label: 'Contact', pageId: 'contact', sectionId: null },
   ];
 
   // Helper function to check if a specific child link is active

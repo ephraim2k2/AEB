@@ -24,32 +24,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fragment+Mono&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data (JSON-LD) for Search Engines & Crawlers -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "African Energy Bank",
+      "alternateName": "AEB",
+      "url": "https://africanenergybank.vercel.app",
+      "logo": "https://africanenergybank.vercel.app/assets/logo.png",
+      "description": "Supranational development finance institution established by APPO and Afreximbank with $5B initial capital to finance oil, gas, and clean energy infrastructure across APPO member states.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Abuja",
+        "addressCountry": "Nigeria"
+      },
+      "founder": [
+        {
+          "@type": "Organization",
+          "name": "African Petroleum Producers' Organization",
+          "alternateName": "APPO"
+        },
+        {
+          "@type": "Organization",
+          "name": "African Export-Import Bank",
+          "alternateName": "Afreximbank"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Prevent White Flash on Initial Page Load -->
+    <style>
+      html, body {
+        background-color: #022c1e;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
-    <div id="root">
-      <!-- Pre-rendered semantic structure for crawlers, link previews, and search engines -->
-      <header>
+    <div id="root"></div>
+
+    <!-- Fallback for Web Crawlers and Non-JS Browsers -->
+    <noscript>
+      <div style="background:#022c1e; color:#ffffff; font-family:sans-serif; padding:40px; max-width:800px; margin:0 auto;">
         <h1>African Energy Bank (AEB) — Financing Africa's Energy Future</h1>
         <p>Established by the African Petroleum Producers' Organization (APPO) and the African Export-Import Bank (Afreximbank) with $5 Billion initial capital to finance oil, gas, and clean energy infrastructure across APPO member states.</p>
-      </header>
-      <main>
-        <section>
-          <h2>Our Dual Mandate</h2>
-          <p>Balancing critical hydrocarbon development and energy security with a just, sovereign transition to renewable power, solar, wind, and cross-border grid interconnections.</p>
-        </section>
-        <section>
-          <h2>Founding Institutions</h2>
-          <p>Promoted by APPO and Afreximbank, headquartered in Abuja, Federal Republic of Nigeria.</p>
-        </section>
-        <section>
-          <h2>APPO Member States</h2>
-          <p>Algeria, Angola, Benin, Cameroon, Chad, Congo, DR Congo, Côte d'Ivoire, Egypt, Equatorial Guinea, Gabon, Ghana, Libya, Namibia, Niger, Nigeria, Senegal, South Africa.</p>
-        </section>
-      </main>
-      <footer>
-        <p>&copy; 2026 African Energy Bank. All rights reserved. Supranational Institution of APPO &amp; Member States.</p>
-      </footer>
-    </div>
+        <h2>Our Dual Mandate</h2>
+        <p>Balancing critical hydrocarbon development and energy security with a just, sovereign transition to renewable power, solar, wind, and cross-border grid interconnections.</p>
+        <h2>Founding Institutions</h2>
+        <p>Promoted by APPO and Afreximbank, headquartered in Abuja, Federal Republic of Nigeria.</p>
+        <h2>APPO Member States</h2>
+        <p>Algeria, Angola, Benin, Cameroon, Chad, Congo, DR Congo, Côte d'Ivoire, Egypt, Equatorial Guinea, Gabon, Ghana, Libya, Namibia, Niger, Nigeria, Senegal, South Africa.</p>
+      </div>
+    </noscript>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
