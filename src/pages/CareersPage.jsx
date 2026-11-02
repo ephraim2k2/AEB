@@ -20,7 +20,7 @@ export default function CareersPage() {
       {/* SECTION 1: HERO LANDING (100vh with Background Photography) */}
       <section className="section--page-hero section--100vh" id="careers-hero">
         <div className="page-hero-bg-wrapper">
-          <img src={careersHeroBg} alt="Careers at Africa Energy Bank" className="page-hero-bg-img" />
+          <img src={careersHeroBg} alt="Careers at African Energy Bank" className="page-hero-bg-img" />
           <div className="page-hero-bg-overlay"></div>
         </div>
 
@@ -32,7 +32,7 @@ export default function CareersPage() {
               <span className="gradient-text">With Supranational Impact</span>
             </h1>
             <p className="page-hero-subtitle">
-              Join an elite pan-African development finance institution backing $5 Billion in oil, gas, and clean energy infrastructure across 54 sovereign nations.
+              Join a dedicated pan-African development finance institution backing $5 Billion in oil, gas, and clean energy infrastructure across APPO member states.
             </p>
 
             <div className="hero-stats-row" style={{ marginTop: '16px', marginBottom: '32px' }}>
@@ -130,7 +130,7 @@ export default function CareersPage() {
             <span className="section-label">Recruitment Notice</span>
             <h2 className="no-openings-title">No Active Openings Currently</h2>
             <p className="no-openings-subtitle">
-              Thank you for your interest in joining the Africa Energy Bank. We currently do not have any open positions available. All inaugural Secretariat roles for this recruitment phase have been filled.
+              Thank you for your interest in joining the African Energy Bank. We currently do not have any open positions available. All inaugural Secretariat roles for this recruitment phase have been filled.
             </p>
 
             {/* <div className="no-openings-box">
@@ -175,7 +175,7 @@ export default function CareersPage() {
               <form onSubmit={handleTalentSubmit} className="job-modal-form">
                 <span className="section-label">Executive Talent Pool</span>
                 <h3>Register Your Interest</h3>
-                <p className="modal-job-loc">Submit your profile for future recruitment phases at Africa Energy Bank.</p>
+                <p className="modal-job-loc">Submit your profile for future recruitment phases at African Energy Bank.</p>
 
                 <div className="form-group">
                   <label>Full Name *</label>

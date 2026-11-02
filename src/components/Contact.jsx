@@ -8,6 +8,7 @@ export default function Contact() {
     email: '',
     type: '',
     message: '',
+    consent: false,
   });
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -18,13 +19,13 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!formData.name || !formData.email || !formData.type) return;
+    if (!formData.name || !formData.email || !formData.type || !formData.consent) return;
 
     setSubmitting(true);
     setTimeout(() => {
       setSubmitting(false);
       setSuccess(true);
-      setFormData({ name: '', org: '', email: '', type: '', message: '' });
+      setFormData({ name: '', org: '', email: '', type: '', message: '', consent: false });
       setTimeout(() => {
         setSuccess(false);
       }, 6000);
@@ -78,8 +79,8 @@ export default function Contact() {
                   <Clock size={20} />
                 </div>
                 <div>
-                  <strong>Review Process</strong>
-                  <span>Fast-tracked eligibility decision within 10 business days</span>
+                  <strong>Mandate Review</strong>
+                  <span>Preliminary mandate eligibility evaluation upon submission</span>
                 </div>
               </li>
             </ul>
@@ -90,7 +91,7 @@ export default function Contact() {
             <div>
               <h3 className="form-title">Apply for Financing</h3>
               <p style={{ fontSize: '0.85rem', color: '#64748b', marginTop: '2px' }}>
-                Initial review within 10 business days
+                Institutional project financing &amp; advisory enquiries
               </p>
             </div>
 
@@ -163,10 +164,25 @@ export default function Contact() {
                 id="f-msg"
                 name="message"
                 rows="4"
-                placeholder="Capacity (MW), location, requested facility size ($M), and project stage..."
+                placeholder="Capacity (MW / bpd), location, requested facility size ($M), and project stage..."
                 value={formData.message}
                 onChange={handleChange}
               ></textarea>
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginTop: '12px', marginBottom: '16px' }}>
+              <input
+                type="checkbox"
+                id="f-consent"
+                name="consent"
+                checked={formData.consent}
+                onChange={(e) => setFormData({ ...formData, consent: e.target.checked })}
+                required
+                style={{ marginTop: '3px', cursor: 'pointer', accentColor: '#047857' }}
+              />
+              <label htmlFor="f-consent" style={{ fontSize: '0.78rem', color: '#64748b', lineHeight: 1.45, cursor: 'pointer' }}>
+                I consent to the collection and processing of my submitted details in accordance with the Nigeria Data Protection Act (NDPA) and African Energy Bank privacy protocols for the purpose of evaluating this financing enquiry.
+              </label>
             </div>
 
             <button type="submit" className="form-submit" id="form-submit" disabled={submitting}>

@@ -71,6 +71,7 @@ export default function Navbar({ currentPage, onNavigate }) {
       key: 'about',
       children: [
         { label: 'Who We Are', pageId: 'about', sectionId: 'who-we-are' },
+        { label: 'Leadership', pageId: 'about', sectionId: 'leadership' },
         { label: 'Key Objectives', pageId: 'about', sectionId: 'key-objectives' },
         { label: 'Impact', pageId: 'home', sectionId: 'impact' },
         { label: 'Partners', pageId: 'home', sectionId: 'partners' },
@@ -109,7 +110,7 @@ export default function Navbar({ currentPage, onNavigate }) {
     <header className={`navbar-wrapper ${scrolled ? 'scrolled' : ''}`}>
       <nav className="nav-capsule">
         <a href="#hero" onClick={(e) => handleNavClick(e, 'home', 'hero')} className="nav-logo">
-          <img src={logo} alt="Africa Energy Bank" className="nav-logo-img" />
+          <img src={logo} alt="African Energy Bank" className="nav-logo-img" />
         </a>
 
         {/* Desktop & Mobile Navigation Links Container */}

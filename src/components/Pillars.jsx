@@ -10,10 +10,10 @@ export default function Pillars() {
   const pillars = [
     {
       icon: <Flame size={22} />,
-      title: 'Oil & Gas Projects',
+      title: 'Oil & Gas Infrastructure',
       body: 'Financing exploration, production, refining, and midstream energy infrastructure.',
       statIcon: <Database size={13} />,
-      stat: '125B Barrels & 650 TCF Gas',
+      stat: '125B bbl & 650 TCF APPO Reserves',
       bgImg: oilGasBg,
     },
     {
@@ -27,7 +27,7 @@ export default function Pillars() {
     {
       icon: <Globe size={22} />,
       title: 'Intra-African Trade',
-      body: 'Promoting and financing crude oil, natural gas, and power commerce across African nations.',
+      body: 'Promoting and financing crude oil, natural gas, and power commerce across APPO member states.',
       statIcon: <Network size={13} />,
       stat: 'Regional Energy Commerce',
       bgImg: tradeGridBg,

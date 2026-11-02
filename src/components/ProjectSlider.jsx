@@ -5,57 +5,56 @@ import projSolar from '../assets/gallery_solar.png';
 import projHydro from '../assets/gallery_hydro.png';
 import projWind from '../assets/gallery_wind.png';
 import projRefinery from '../assets/gallery_refinery.png';
-import dangoteRefinery from '../assets/dangote_refinery.png';
 
 export default function ProjectSlider() {
   const projects = [
     {
       id: 0,
-      tag: 'Refinery · West Africa',
-      title: 'Regional Oil Refinery & Downstream Grid',
-      desc: '$2.4B facility financing modern downstream oil refining, pipeline interconnections, and intra-African petroleum product commerce across APPO member states.',
-      chips: ['$2.4B Facility', '650k bpd Processing', '6,200 Jobs Created'],
+      tag: 'Priority Sector · Downstream',
+      title: 'Downstream Refining & Regional Processing',
+      desc: 'Catalyzing investments in modern petroleum refining, rehabilitation of strategic assets, and intra-African petroleum product commerce across APPO member states to eliminate dependency on extra-continental imports.',
+      chips: ['Downstream Processing', 'Supply Chain Security', 'Regional Commerce'],
       img: projRefinery,
       miniIcon: <Flame size={22} />,
-      country: 'West & Central Africa',
-      shortDesc: '$2.4B facility financing modern downstream refining and regional petroleum commerce.',
-      badge: 'Operational 2024',
+      country: 'APPO Member States',
+      shortDesc: 'Strategic capital for modern refining and regional petroleum distribution networks.',
+      badge: 'Priority Focus Area',
     },
     {
       id: 1,
-      tag: 'Solar · Nigeria',
-      title: 'Northern Nigeria Solar Corridor — 500MW',
-      desc: 'The largest solar energy project in West Africa, delivering clean electricity to 5 million households across six northern states through a $1.8B blended finance package.',
-      chips: ['$1.8B Financing', '5M Households', '2,400 Jobs Created'],
-      img: projSolar,
-      miniIcon: <Sun size={22} />,
-      country: 'Nigeria · West Africa',
-      shortDesc: '$1.8B solar corridor delivering clean electricity to 5 million households across northern Nigeria.',
-      badge: '500MW Solar',
+      tag: 'Priority Sector · Gas Infrastructure',
+      title: 'Cross-Border Gas & Baseload Power',
+      desc: 'Unlocking Africa\'s 650 TCF of natural gas reserves through cross-border pipeline networks, domestic gas-to-power facilities, and clean LPG distribution to substitute high-emission biomass fuels.',
+      chips: ['Cross-Border Pipelines', 'Gas-to-Power', 'LPG Clean Cooking'],
+      img: projHydro,
+      miniIcon: <Droplets size={22} />,
+      country: 'Pan-African Corridors',
+      shortDesc: 'Financing cross-border gas pipelines and transition power generation.',
+      badge: 'Priority Focus Area',
     },
     {
       id: 2,
-      tag: 'Refinery · Nigeria',
-      title: 'Dangote Refinery — Lagos, Nigeria',
-      desc: 'Africa\'s largest single-train petroleum refinery with 650,000 barrels per day capacity, reducing the continent\'s dependence on imported refined petroleum products and creating thousands of jobs.',
-      chips: ['$19B Investment', '650k bpd Capacity', '100,000+ Jobs'],
-      img: dangoteRefinery,
-      miniIcon: <Flame size={22} />,
-      country: 'Nigeria · West Africa',
-      shortDesc: 'Africa\'s largest 650,000 bpd refinery transforming Nigeria into a net exporter of refined petroleum products.',
-      badge: 'Operational 2024',
+      tag: 'Priority Sector · Clean Energy',
+      title: 'Utility-Scale Solar & Wind Corridors',
+      desc: 'Deploying blended finance facilities for utility-scale solar photovoltaic arrays, wind corridors, and commercial battery storage across sun-rich African regions to expand clean electricity access.',
+      chips: ['Utility-Scale Solar', 'Wind Corridors', 'Battery Energy Storage'],
+      img: projSolar,
+      miniIcon: <Sun size={22} />,
+      country: 'Sahel & Sub-Saharan Africa',
+      shortDesc: 'Blended finance for utility solar, wind generation, and battery storage.',
+      badge: 'Priority Focus Area',
     },
     {
       id: 3,
-      tag: 'Clean Energy · Namibia',
-      title: 'Namibia Wind & Clean Energy Export Hub',
-      desc: '$2.1B facility for utility-scale wind power capacity, green ammonia production, and dedicated export terminal — positioning Southern Africa as a global clean energy leader.',
-      chips: ['$2.1B Facility', '350kt Green Ammonia/yr', '4,500 Jobs Created'],
+      tag: 'Priority Sector · Interconnection',
+      title: 'Regional Grid Interconnection & Hydrogen',
+      desc: 'Accelerating high-voltage transmission interconnectors linking regional power pools alongside next-generation green hydrogen and clean ammonia export infrastructure.',
+      chips: ['Power Pool Interconnectors', 'Grid Integration', 'Green Hydrogen'],
       img: projWind,
       miniIcon: <FlaskConical size={22} />,
-      country: 'Namibia · Southern Africa',
-      shortDesc: '$2.1B facility for wind power capacity, green ammonia production, and export terminal.',
-      badge: 'Financial Close 2025',
+      country: 'Regional Power Pools',
+      shortDesc: 'Transmission interconnectors and clean hydrogen/ammonia infrastructure.',
+      badge: 'Priority Focus Area',
     },
   ];
 
@@ -162,12 +161,12 @@ export default function ProjectSlider() {
     <section className="section section--projects" id="projects">
       <div className="container">
         <div className="section-header" id="projects-header">
-          <span className="section-label">Featured Projects</span>
+          <span className="section-label">Target Investment Pipeline</span>
           <h2 className="section-title">
-            Real Projects, <span className="gradient-text">Real Impact</span>
+            Priority Investment <span className="gradient-text">Focus Areas</span>
           </h2>
           <p className="section-subtitle">
-            From the Sahara to the Sahel, from the Atlantic coast to the Horn of Africa — we finance energy that transforms lives.
+            Directing strategic debt, equity, and syndicated financing across core energy verticals in APPO member states to ensure energy sovereignty and a just transition.
           </p>
         </div>
 

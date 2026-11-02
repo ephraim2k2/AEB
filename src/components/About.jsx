@@ -19,11 +19,11 @@ export default function About({ onNavigate }) {
             <img src={aboutImg} alt="African Energy Bank wind and renewable infrastructure" className="about-img" />
             <div className="about-img-badge">
               <Calendar size={14} color="#047857" />
-              Est. 2024 · Abuja, Nigeria
+              Operational 2026 · Abuja, Nigeria
             </div>
             <div className="about-img-stat">
-              <span className="astat-num">$3T</span>
-              <span className="astat-label">Africa's Energy Gap</span>
+              <span className="astat-num">$200B</span>
+              <span className="astat-label">Target Financing Gap</span>
             </div>
           </div>
 
@@ -31,10 +31,10 @@ export default function About({ onNavigate }) {
           <div className="about-text" id="about-text">
             <span className="section-label">Our Mandate</span>
             <h2 className="section-title">
-              Africa's Premier <span className="gradient-text">Energy Finance Partner</span>
+              Africa's Dedicated <span className="gradient-text">Energy Finance Institution</span>
             </h2>
             <p className="section-subtitle" style={{ textAlign: 'left', marginBottom: '20px' }}>
-              Formed by APPO and Afreximbank, the AEB mobilizes capital for oil, gas, and clean energy projects across Africa.
+              Established by APPO and Afreximbank, the African Energy Bank mobilizes strategic capital for oil, gas, and clean energy projects across APPO member states.
             </p>
 
             <div className="about-points">

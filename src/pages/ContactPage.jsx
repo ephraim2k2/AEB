@@ -16,7 +16,7 @@ export default function ContactPage() {
       {/* SECTION 1: HERO LANDING */}
       <section className="section--page-hero section--100vh" id="contact-hero">
         <div className="page-hero-bg-wrapper">
-          <img src={contactHeroBg} alt="Africa Energy Bank Headquarters & Facilities" className="page-hero-bg-img" />
+          <img src={contactHeroBg} alt="African Energy Bank Headquarters & Facilities" className="page-hero-bg-img" />
           <div className="page-hero-bg-overlay"></div>
         </div>
 
@@ -25,7 +25,7 @@ export default function ContactPage() {
             <span className="section-label">Get in Touch</span>
             <h1 className="page-hero-title">
               Contact the <br />
-              <span className="gradient-text">Africa Energy Bank</span>
+              <span className="gradient-text">African Energy Bank</span>
             </h1>
             <p className="page-hero-subtitle">
               Have a question, partnership inquiry, or need more information about our initiatives? Reach out to our team and we'll get back to you promptly.
@@ -37,12 +37,12 @@ export default function ContactPage() {
                 <span className="stat-desc">Headquarters HQ</span>
               </div>
               <div className="hero-mini-stat">
-                <span className="stat-value">24hrs</span>
-                <span className="stat-desc">Response Time</span>
+                <span className="stat-value">18</span>
+                <span className="stat-desc">APPO Member States</span>
               </div>
               <div className="hero-mini-stat">
-                <span className="stat-value">4 Hubs</span>
-                <span className="stat-desc">Regional Offices</span>
+                <span className="stat-value">Prompt</span>
+                <span className="stat-desc">Deal Review</span>
               </div>
             </div>
 
@@ -77,21 +77,21 @@ export default function ContactPage() {
                   <div className="cd-icon"><MapPin size={20} /></div>
                   <div>
                     <strong>Headquarters</strong>
-                    <span>Africa Energy Bank Tower, Central Business District, Abuja, Nigeria</span>
+                    <span>African Energy Bank Secretariat, Central Business District, Abuja, Nigeria</span>
                   </div>
                 </li>
                 <li>
                   <div className="cd-icon"><Mail size={20} /></div>
                   <div>
                     <strong>Email</strong>
-                    <span>info@africaenergybank.org</span>
+                    <span>invest@africanenergybank.org</span>
                   </div>
                 </li>
                 <li>
                   <div className="cd-icon"><Phone size={20} /></div>
                   <div>
                     <strong>Telephone</strong>
-                    <span>+234 (0) 90 800 0000</span>
+                    <span>+234 (0) 9 461 8000</span>
                   </div>
                 </li>
                 <li>
@@ -158,6 +158,18 @@ export default function ContactPage() {
               <div className="form-group">
                 <label htmlFor="cp-message">Message *</label>
                 <textarea id="cp-message" rows={4} required placeholder="How can we help you?" />
+              </div>
+
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginTop: '12px', marginBottom: '16px' }}>
+                <input
+                  type="checkbox"
+                  id="cp-consent"
+                  required
+                  style={{ marginTop: '3px', cursor: 'pointer', accentColor: '#047857' }}
+                />
+                <label htmlFor="cp-consent" style={{ fontSize: '0.78rem', color: '#64748b', lineHeight: 1.45, cursor: 'pointer' }}>
+                  I consent to the collection and processing of my submitted details in accordance with the Nigeria Data Protection Act (NDPA) and African Energy Bank privacy protocols.
+                </label>
               </div>
 
               <button type="submit" className="form-submit">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Play, Flame, Zap, Globe, TrendingUp, Database, Users, Clock } from 'lucide-react';
+import { ArrowRight, Play, Flame, Zap, Globe, TrendingUp, Database, Users, MapPin } from 'lucide-react';
 import heroBg from '../assets/hero_landing_bg.jpg';
 
 export default function Hero({ onNavigate }) {
@@ -16,7 +16,7 @@ export default function Hero({ onNavigate }) {
       <div className="hero-bg-wrapper">
         <img
           src={heroBg}
-          alt="African Renewable Energy Infrastructure"
+          alt="African Energy Bank — Financing Africa's Energy Future"
           className="hero-bg-img"
         />
         <div className="hero-bg-overlay"></div>
@@ -128,20 +128,20 @@ export default function Hero({ onNavigate }) {
                 <Users size={22} color="#34d399" />
               </div>
               <div className="hstat-body">
-                <span className="hstat-num">620M</span>
-                <span className="hstat-label">People Access Target</span>
-                <span className="hstat-sub">Solving energy poverty</span>
+                <span className="hstat-num">18</span>
+                <span className="hstat-label">APPO Member States</span>
+                <span className="hstat-sub">Cornerstone sovereign shareholders</span>
               </div>
             </div>
 
             <div className="hstat">
               <div className="hstat-badge">
-                <Clock size={22} color="#34d399" />
+                <MapPin size={22} color="#34d399" />
               </div>
               <div className="hstat-body">
-                <span className="hstat-num">3×</span>
-                <span className="hstat-label">Faster Execution</span>
-                <span className="hstat-sub">Independent supranational DFI</span>
+                <span className="hstat-num">Abuja</span>
+                <span className="hstat-label">Headquarters Secretariat</span>
+                <span className="hstat-sub">Host country Nigeria</span>
               </div>
             </div>
           </div>

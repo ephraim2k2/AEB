@@ -4,7 +4,6 @@ import { Newspaper, Download, Share2, Calendar, FileText, ArrowRight, ExternalLi
 import mediaHeroBg from '../assets/gallery_hydro.png';
 import imgLeadership from '../assets/gallery_leadership.png';
 import imgRefinery from '../assets/gallery_refinery.png';
-import imgDangote from '../assets/dangote_refinery.png';
 import imgSolar from '../assets/gallery_solar.png';
 import imgWind from '../assets/gallery_wind.png';
 import imgHydro from '../assets/gallery_hydro.png';
@@ -13,60 +12,60 @@ import imgCommunity from '../assets/gallery_community.png';
 const allPressReleases = [
   {
     id: 1,
-    category: 'Press Release',
-    title: 'Africa Energy Bank & Afreximbank Sign Landmark Headquarters Agreement in Abuja',
-    date: 'August 28, 2026',
+    category: 'Breaking News',
+    title: "Africa Energy Bank Takes Off in Abuja: Egypt's Helmy Ghazi Named Pioneer President",
+    date: 'October 31, 2026',
     readTime: '4 min read',
-    summary: 'The Federal Republic of Nigeria officially grants diplomatic status, tax exemptions, and supranational charter guarantees for the AEB Secretariat Headquarters in Abuja.',
-    fullContent: 'ABUJA, NIGERIA — In a historic ceremony attended by Ministers of Hydrocarbons and Finance from across APPO member states, the Africa Energy Bank (AEB) and Afreximbank officially signed the Host Country Headquarters Agreement with the Federal Government of Nigeria. The agreement establishes diplomatic immunity, tax-exempt institutional status, and full supranational capital movement guarantees for the bank\'s headquarters in the Central Business District of Abuja. The ceremony marks the final regulatory milestone prior to the bank\'s inaugural $5 billion capital call.',
-    tag: 'Governance',
+    summary: 'The $5 billion Africa Energy Bank officially commences operations following its inaugural General Assembly in Abuja, appointing veteran banker Helmy Ghazi as pioneer president to spearhead continental energy financing.',
+    fullContent: 'ABUJA, NIGERIA — The $5 billion Africa Energy Bank (AEB) has officially commenced operations following its inaugural General Assembly held in Abuja, Nigeria. During the landmark assembly, Egyptian senior banking executive Helmy Ghazi was named the bank\'s pioneer President. Established jointly by the African Export-Import Bank (Afreximbank) and the African Petroleum Producers’ Organization (APPO), the bank is structured to address Africa\'s critical $200 billion energy financing deficit by providing debt, equity, and syndicated facilities across oil, gas, power grid, and renewable energy infrastructure.',
+    tag: 'Leadership',
     img: imgLeadership,
     author: 'AEB Communications Directorate',
   },
   {
     id: 2,
+    category: 'Press Release',
+    title: 'African Energy Bank & Afreximbank Finalize Headquarters Agreement in Abuja',
+    date: 'February 2026',
+    readTime: '4 min read',
+    summary: 'The Federal Republic of Nigeria officially hands over the AEB Secretariat Headquarters complex in the Central Business District of Abuja.',
+    fullContent: 'ABUJA, NIGERIA — In an official ceremony attended by Ministers of Petroleum and Energy from across APPO member states and senior Afreximbank executives, the African Energy Bank (AEB) officially received the completed Headquarters complex in Abuja. The milestone establishes the bank\'s physical secretariat in Nigeria\'s Federal Capital Territory, preparing the institution for full operational rollout and inaugural capital mobilization.',
+    tag: 'Governance',
+    img: imgLeadership,
+    author: 'AEB Communications Directorate',
+  },
+  {
+    id: 3,
     category: 'Treaty & Policy',
     title: 'APPO Council of Ministers Ratifies $5 Billion Initial Capital Subscription Framework',
-    date: 'July 14, 2026',
+    date: 'January 2026',
     readTime: '6 min read',
-    summary: '18 African Petroleum Producers’ Organization member countries finalize individual $83M equity contributions, paving the way for inaugural debt issuance.',
-    fullContent: 'YAOUNDÉ, CAMEROON — The Extraordinary Session of the APPO Council of Ministers has formally ratified the equity subscription schedule for the Africa Energy Bank. Each of the 18 sovereign member states has committed $83 million toward the initial tranche, matched by Afreximbank\'s cornerstone institutional commitment. This capital structure provides the bank with an AAA-equivalent risk-weighted underwriting baseline for continental energy bond issuances scheduled for Q4 2026.',
+    summary: '18 African Petroleum Producers’ Organization member countries finalize equity contribution guidelines alongside Afreximbank.',
+    fullContent: 'YAOUNDÉ, CAMEROON — The Extraordinary Session of the APPO Council of Ministers has formally ratified the equity subscription schedule for the African Energy Bank. Each of the sovereign member states commits toward the foundational equity tranche, matched by Afreximbank\'s cornerstone institutional commitment. This capital structure provides the bank with an underwriting baseline for regional energy financing and syndicated facilities.',
     tag: 'Capitalization',
     img: imgRefinery,
     author: 'AEB Finance Secretariat',
   },
   {
-    id: 3,
-    category: 'Project Announcement',
-    title: 'AEB Approves $600 Million Facility for East African Power Pool Interconnection',
-    date: 'June 02, 2026',
+    id: 4,
+    category: 'Project Finance',
+    title: 'African Energy Bank Launches $10-Billion Financing Drive for Member States',
+    date: 'February 2026',
     readTime: '5 min read',
-    summary: 'Financing package accelerates high-voltage transmission lines connecting Ethiopia, Kenya, Djibouti, and Tanzania clean hydroelectric grids.',
-    fullContent: 'ADDIS ABABA, ETHIOPIA — The Board of Directors of the Africa Energy Bank has greenlit a $600 million syndicated debt facility supporting Phase 2 of the Eastern Africa Power Pool Interconnection Project. The project finances 1,200 kilometers of 500kV HVDC transmission corridors linking hydro generation capacity from the Great Ethiopian Renaissance Dam with regional industrial hubs across East Africa.',
-    tag: 'Project Finance',
+    summary: 'Inaugural project financing drive targets high-impact energy infrastructure across priority member states including Nigeria, Angola, and Libya.',
+    fullContent: 'ABUJA / CAIRO — The African Energy Bank has formally commenced an initial $10-billion project financing drive focused on critical oil, gas, and energy transition infrastructure. The initiative focuses on catalyzing bankable projects in founding member states such as Nigeria, Angola, and Libya, providing debt facilities and underwriting to attract private and institutional co-investment.',
+    tag: 'Financing Drive',
     img: imgHydro,
     author: 'Infrastructure Investment Desk',
   },
   {
-    id: 4,
-    category: 'Downstream Focus',
-    title: 'Dangote Refinery Co-Financing Agreement Reached to Expand Regional Product Supply',
-    date: 'May 28, 2026',
-    readTime: '5 min read',
-    summary: 'AEB enters strategic liquidity partnership with Dangote Group to finance off-take distribution channels into 6 West African countries.',
-    fullContent: 'LAGOS, NIGERIA — Africa Energy Bank has finalized a strategic working capital facility with Dangote Petroleum Refinery to finance maritime and pipeline distribution logistics for refined products reaching West and Central African APPO member nations. The partnership aims to lower freight premiums, reduce currency conversion costs, and replace expensive extra-continental imports with African-refined fuel.',
-    tag: 'Downstream',
-    img: imgDangote,
-    author: 'Trade & Energy Desk',
-  },
-  {
     id: 5,
     category: 'Market Report',
-    title: 'African Energy Outlook 2026: Bridging the $100 Billion Infrastructure Gap',
-    date: 'May 19, 2026',
+    title: 'African Energy Outlook: Bridging the $200 Billion Infrastructure Gap',
+    date: 'April 2026',
     readTime: '8 min read',
-    summary: 'AEB Research Directorate releases flagship macro report examining cross-border gas pipelines, refinery self-reliance, and clean technology integration.',
-    fullContent: 'GENEVA / ABUJA — The AEB Research Directorate has released its flagship 2026 Energy Outlook. The comprehensive 180-page report highlights critical investment vectors needed to eliminate energy poverty across Sub-Saharan Africa while maintaining sovereign energy independence. Key recommendations call for accelerated intra-African pipeline networks, local refining value creation, and blended finance structures for solar-wind microgrids.',
+    summary: 'AEB Research Directorate releases macro report examining cross-border gas pipelines, refinery self-reliance, and clean energy integration.',
+    fullContent: 'ABUJA, NIGERIA — The AEB Research Directorate has released its flagship African Energy Outlook. The report highlights critical investment vectors needed to eliminate energy poverty across APPO member states while maintaining sovereign energy independence through accelerated pipeline networks, refining capacity, and renewable microgrids.',
     tag: 'Research',
     img: imgWind,
     author: 'AEB Chief Economist Office',
@@ -74,11 +73,11 @@ const allPressReleases = [
   {
     id: 6,
     category: 'Clean Transition',
-    title: 'Northern Nigeria 500MW Solar Corridor Secures $1.8B Blended Finance Package',
-    date: 'April 11, 2026',
+    title: 'African Energy Bank Unveils Renewable Energy and Clean Hydrogen Strategy',
+    date: 'May 2026',
     readTime: '4 min read',
-    summary: 'Public-private partnership package co-arranged by AEB brings utility-scale solar generation and grid stabilization to 5 million households.',
-    fullContent: 'KANO, NIGERIA — The Africa Energy Bank, alongside regional syndicate partners, has closed financial structuring on the 500MW Northern Nigeria Solar Corridor. Combining green bond tranches with sovereign risk guarantees, the project represents West Africa\'s largest utility-scale solar investment to date, providing low-cost electricity for regional agricultural processing and manufacturing zones.',
+    summary: 'Comprehensive dual-mandate roadmap dedicates significant capital allocation to utility-scale solar, wind, and cross-border power interconnections.',
+    fullContent: 'ABUJA, NIGERIA — Outlining its commitment to an equitable and just energy transition, the African Energy Bank has published its Renewable Energy & Power Pool Strategy. The framework establishes specialized credit enhancement instruments for solar corridors, regional power pool interconnectors, and green hydrogen export pilots across member states.',
     tag: 'Renewables',
     img: imgSolar,
     author: 'Clean Energy Division',
@@ -88,23 +87,23 @@ const allPressReleases = [
 const videoBroadcasts = [
   {
     id: 'v1',
-    title: 'Official Ceremony: Signing of the AEB Headquarters Agreement in Abuja',
+    title: 'Official Ceremony: Handover of the African Energy Bank Headquarters in Abuja',
     category: 'Keynote & Ceremony',
-    date: 'August 2026',
+    date: 'February 2026',
     duration: '14:25',
     thumbnail: imgLeadership,
     videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-    summary: 'Full video coverage of the historic signing ceremony between the Federal Republic of Nigeria, APPO Ministers, and Afreximbank Executives establishing the Africa Energy Bank Headquarters in Abuja.',
+    summary: 'Full video coverage of the historic headquarters handover ceremony between the Federal Republic of Nigeria, APPO Ministers, and Afreximbank Executives in Abuja.',
   },
   {
     id: 'v2',
-    title: 'Dangote Refinery Tour & Downstream Energy Security Panel',
-    category: 'Documentary',
-    date: 'July 2026',
+    title: 'APPO Ministerial Roundtable: Downstream Refining & Energy Security in Africa',
+    category: 'Panel Discussion',
+    date: 'March 2026',
     duration: '08:40',
-    thumbnail: imgDangote,
+    thumbnail: imgRefinery,
     videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-    summary: 'Exclusive broadcast featuring an in-depth tour of the 650,000 bpd refinery facility in Lekki, Lagos, followed by an executive panel on African downstream self-sufficiency.',
+    summary: 'Executive broadcast featuring ministers and energy leaders discussing African downstream self-sufficiency, cross-border pipelines, and intra-African fuel trade.',
   },
   {
     id: 'v3',
@@ -118,13 +117,13 @@ const videoBroadcasts = [
   },
   {
     id: 'v4',
-    title: 'East African Power Pool & Hydropower Infrastructure Briefing',
+    title: 'Regional Power Pools & Hydropower Infrastructure Briefing',
     category: 'Project Showcase',
     date: 'May 2026',
     duration: '06:50',
     thumbnail: imgHydro,
     videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-    summary: 'Technical overview and documentary highlight reel showcasing the $600M HVDC transmission grid interconnecting Ethiopia, Kenya, and neighboring East African nations.',
+    summary: 'Technical overview and documentary highlight reel showcasing high-voltage transmission interconnectors linking regional power pools across member states.',
   },
 ];
 
@@ -174,7 +173,7 @@ export default function MediaPage() {
       {/* SECTION 1: HERO LANDING */}
       <section className="section--page-hero section--100vh" id="media-hero">
         <div className="page-hero-bg-wrapper">
-          <img src={mediaHeroBg} alt="Africa Energy Bank Press & Media Center" className="page-hero-bg-img" />
+          <img src={mediaHeroBg} alt="African Energy Bank Press & Media Center" className="page-hero-bg-img" />
           <div className="page-hero-bg-overlay"></div>
         </div>
 
@@ -186,7 +185,7 @@ export default function MediaPage() {
               <span className="gradient-text">Supranational Insights</span>
             </h1>
             <p className="page-hero-subtitle">
-              Access official press releases, diplomatic announcements, project financing updates, high-definition video broadcasts, and research publications directly from the Africa Energy Bank.
+              Access official press releases, diplomatic announcements, project financing updates, high-definition video broadcasts, and research publications directly from the African Energy Bank.
             </p>
 
             <div className="hero-stats-row" style={{ marginTop: '16px', marginBottom: '32px' }}>
@@ -229,7 +228,7 @@ export default function MediaPage() {
               Latest News &amp; <span className="gradient-text">Press Releases</span>
             </h2>
             <p className="section-subtitle">
-              Explore official treaty ratifications, project financing milestones, and policy updates directly from the Africa Energy Bank.
+              Explore official treaty ratifications, project financing milestones, and policy updates directly from the African Energy Bank.
             </p>
           </div>
 
@@ -389,7 +388,7 @@ export default function MediaPage() {
               <hr style={{ border: 0, borderTop: '1px solid var(--color-border)', margin: '20px 0' }} />
               <p className="media-modal-paragraph">{activeArticle.fullContent}</p>
               <p className="media-modal-paragraph">
-                The Africa Energy Bank continues to work closely with national power utilities, sovereign wealth funds, and international co-financiers to catalyze sustainable infrastructure investment across all 54 African nations.
+                The African Energy Bank continues to work closely with national power utilities, sovereign wealth funds, and international co-financiers to catalyze sustainable infrastructure investment across APPO member states.
               </p>
               
               <div className="media-modal-footer">

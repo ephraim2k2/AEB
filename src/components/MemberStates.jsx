@@ -9,12 +9,13 @@ const memberStates = [
   { name: 'Chad', flag: '🇹🇩' },
   { name: 'Congo', flag: '🇨🇬' },
   { name: 'DR Congo', flag: '🇨🇩' },
+  { name: 'Côte d’Ivoire', flag: '🇨🇮' },
   { name: 'Egypt', flag: '🇪🇬' },
   { name: 'Equatorial Guinea', flag: '🇬🇶' },
   { name: 'Gabon', flag: '🇬🇦' },
   { name: 'Ghana', flag: '🇬🇭' },
-  { name: 'Ivory Coast', flag: '🇨🇮' },
   { name: 'Libya', flag: '🇱🇾' },
+  { name: 'Namibia', flag: '🇳🇦' },
   { name: 'Niger', flag: '🇳🇪' },
   { name: 'Nigeria', flag: '🇳🇬' },
   { name: 'Senegal', flag: '🇸🇳' },
@@ -31,10 +32,10 @@ export default function MemberStates({ onNavigate }) {
         <div className="section-header" style={{ marginBottom: '48px' }}>
           <span className="section-label">Sovereign Shareholding</span>
           <h2 className="section-title">
-            APPO<span className="gradient-text">Member States</span>
+            APPO <span className="gradient-text">Member States</span>
           </h2>
           <p className="section-subtitle">
-            Capitalized by member countries of the African Petroleum Producers' Organization alongside Afreximbank and African sovereign wealth funds.
+            Capitalized by the 18 sovereign member countries of the African Petroleum Producers' Organization alongside Afreximbank.
           </p>
         </div>
 
@@ -55,7 +56,7 @@ export default function MemberStates({ onNavigate }) {
           <div className="hq-text">
             <h3>Headquarters Agreement — Abuja, Nigeria</h3>
             <p>
-              In 2024, the Federal Republic of Nigeria won the host country bid for the Africa Energy Bank Headquarters in Abuja, granting diplomatic immunity, tax exemptions, and supranational status.
+              In 2024, the Federal Republic of Nigeria was selected to host the African Energy Bank Headquarters in Abuja, formalized through a diplomatic host country agreement with APPO and Afreximbank.
             </p>
           </div>
           <button onClick={() => onNavigate && onNavigate('about')} className="btn--pill-primary">

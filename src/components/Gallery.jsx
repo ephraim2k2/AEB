@@ -89,7 +89,7 @@ export default function Gallery({ onNavigate }) {
               Our Work <span className="gradient-text">In Action</span>
             </h2>
             <p className="section-subtitle" style={{ textAlign: 'left', margin: 0 }}>
-              Explore the energy projects, partnerships, and communities that the Africa Energy Bank is helping power across the continent.
+              Explore the energy infrastructure, institutional partnerships, and priority sectors that the African Energy Bank is helping advance across APPO member states.
             </p>
           </div>
 

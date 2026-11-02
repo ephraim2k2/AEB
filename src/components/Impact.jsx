@@ -1,59 +1,64 @@
 import React from 'react';
-import { Zap, ShieldCheck, Users, Flame } from 'lucide-react';
+import { Users, Flame, TrendingUp } from 'lucide-react';
 
 export default function Impact() {
   const impactCards = [
     {
       icon: <Flame size={13} />,
-      tag: 'Oil & Gas Mandate',
+      tag: 'Strategic Mandate',
       amberTag: false,
-      num: '70%',
-      title: 'Oil & Gas Infrastructure',
-      body: '70% of capital targets critical upstream, midstream, and downstream oil and gas projects to guarantee African energy security.',
+      num: '70 / 30',
+      title: 'Dual-Track Capital Allocation',
+      body: 'Balancing critical hydrocarbon and gas infrastructure (70%) with accelerated renewables and clean transition investments (30%).',
       progress: '70%',
       amberFill: false,
     },
     {
-      icon: <ShieldCheck size={13} />,
-      tag: 'Execution Speed',
+      icon: <Users size={13} />,
+      tag: 'Local Content Target',
       amberTag: true,
-      num: '85%',
-      title: 'Projects On Schedule',
-      body: '85% reach financial close within agreed timelines — 3× faster than traditional multilateral banks.',
-      progress: '85%',
+      num: '80%',
+      title: 'Target Local Value Creation',
+      body: 'Aiming to direct up to 80% of project procurement to African contractors, engineering service providers, and domestic suppliers.',
+      progress: '80%',
       amberFill: true,
     },
     {
-      icon: <Users size={13} />,
-      tag: 'In-Country Value',
+      icon: <TrendingUp size={13} />,
+      tag: 'Pipeline Drive',
       amberTag: false,
-      num: '80%',
-      title: 'Local Value Creation',
-      body: '80% of procurement goes directly to African contractors, suppliers, and engineering partners.',
-      progress: '80%',
+      num: '$10B',
+      title: 'Inaugural Financing Drive',
+      body: 'Initial financing pipeline rolling out across priority member states including Nigeria, Angola, and Libya to catalyze regional development.',
+      progress: '100%',
       amberFill: false,
     },
   ];
 
   const milestones = [
     {
-      year: '2024 — Established by African Union',
-      desc: 'AEB formally constituted with mandate across 54 AU member states',
+      year: '2024 — Host Country Selection',
+      desc: 'Federal Republic of Nigeria selected by APPO member states to host the African Energy Bank Headquarters in Abuja.',
       future: false,
     },
     {
-      year: '2025 — First Financing Package',
-      desc: '$2.4B blended finance facility for West African solar and storage corridor',
+      year: '2025 — Treaty & Charter Ratification',
+      desc: 'Finalization of the diplomatic Headquarters Agreement, supranational governance charter, and sovereign equity subscriptions.',
       future: false,
     },
     {
-      year: '2026 — Green Hydrogen Programme',
-      desc: 'Launching $8B facility for green hydrogen production and export infrastructure',
-      future: true,
+      year: 'February 2026 — Headquarters Handover',
+      desc: 'Official handover of the completed AEB Headquarters complex in the Central Business District of Abuja.',
+      future: false,
     },
     {
-      year: '2030 — SDG 7 Target',
-      desc: 'Universal electricity access across Africa — 620M people connected to clean power',
+      year: 'October 2026 — Inaugural General Assembly & Take-Off',
+      desc: 'Bank officially takes off in Abuja; veteran banker Helmy Ghazi appointed pioneer President to lead the drive in bridging the $200B energy deficit.',
+      future: false,
+    },
+    {
+      year: '2027 & Beyond — Full Lending & Underwriting Deployment',
+      desc: 'Scaling syndicated debt, equity co-investments, and transition facilities across APPO member states.',
       future: true,
     },
   ];
@@ -62,12 +67,12 @@ export default function Impact() {
     <section className="section section--impact" id="impact">
       <div className="container">
         <div className="section-header" id="impact-header">
-          <span className="section-label">Development Impact</span>
+          <span className="section-label">Development Targets</span>
           <h2 className="section-title">
-            Measuring What <span className="gradient-text">Matters Most</span>
+            Our Strategic <span className="gradient-text">Targets &amp; Milestones</span>
           </h2>
           <p className="section-subtitle">
-            Every loan is measured against tangible development outcomes — from megawatts generated to lives transformed across Africa.
+            Capital deployment and operational benchmarks designed to overcome energy poverty and build industrial resilience across APPO member states.
           </p>
         </div>
 

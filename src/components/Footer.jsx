@@ -31,9 +31,9 @@ export default function Footer({ onNavigate }) {
         <div className="container">
           <div className="footer-grid">
             <div className="footer-brand">
-              <img src={logoFooter} alt="Africa Energy Bank" className="footer-logo-img" />
+              <img src={logoFooter} alt="African Energy Bank" className="footer-logo-img" />
               <p>
-                Africa's premier supranational development finance institution dedicated to powering sustainable energy infrastructure across 54 African nations.
+                Africa's dedicated energy finance institution, established by APPO and Afreximbank to finance resilient energy infrastructure and sustainable economic development across APPO member states.
               </p>
             </div>
 
@@ -52,12 +52,12 @@ export default function Footer({ onNavigate }) {
                 </li>
                 <li>
                   <a href="#impact" onClick={(e) => handleNavClick(e, 'home', 'impact')}>
-                    Development Impact
+                    Development Targets
                   </a>
                 </li>
                 <li>
                   <a href="#projects" onClick={(e) => handleNavClick(e, 'home', 'projects')}>
-                    Featured Projects
+                    Priority Pipeline
                   </a>
                 </li>
               </ul>
@@ -68,7 +68,7 @@ export default function Footer({ onNavigate }) {
               <ul>
                 <li>
                   <a href="#contact" onClick={(e) => handleNavClick(e, 'contact', null)}>
-                    Clean Energy Credit
+                    Financing Facilities
                   </a>
                 </li>
                 <li>
@@ -83,33 +83,28 @@ export default function Footer({ onNavigate }) {
                 </li>
                 <li>
                   <a href="#contact" onClick={(e) => handleNavClick(e, 'contact', null)}>
-                    Supranational Advisory
+                    Project Advisory
                   </a>
                 </li>
               </ul>
             </div>
 
             <div className="footer-col">
-              <h4>Governance &amp; Hubs</h4>
+              <h4>Institutional Structure</h4>
               <ul>
                 <li>
                   <a href="#contact" onClick={(e) => handleNavClick(e, 'contact', null)}>
-                    Abuja Headquarters
+                    Abuja Headquarters (Secretariat)
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" onClick={(e) => handleNavClick(e, 'contact', null)}>
-                    Yaoundé Directorate
+                  <a href="#about" onClick={(e) => handleNavClick(e, 'about', null)}>
+                    APPO Secretariat (Brazzaville)
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" onClick={(e) => handleNavClick(e, 'contact', null)}>
-                    Cairo Trade Desk
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact" onClick={(e) => handleNavClick(e, 'contact', null)}>
-                    Nairobi Energy Hub
+                  <a href="#about" onClick={(e) => handleNavClick(e, 'about', null)}>
+                    Afreximbank Liaison (Cairo)
                   </a>
                 </li>
               </ul>
@@ -117,7 +112,7 @@ export default function Footer({ onNavigate }) {
           </div>
 
           <div className="glass-card-bottom">
-            <div className="giant-footer-title">AFRICA ENERGY BANK</div>
+            <div className="giant-footer-title">AFRICAN ENERGY BANK</div>
             <div className="glass-card-meta">
               <div className="footer-powered-by">
                 <span>Backed By</span>
@@ -132,7 +127,7 @@ export default function Footer({ onNavigate }) {
           </div>
 
           <p style={{ textAlign: 'center', fontSize: '0.78rem', color: 'rgba(255,255,255,.3)', marginTop: '24px' }}>
-            © 2026 Africa Energy Bank. All rights reserved. Supranational Institution of APPO &amp; Member States.
+            © 2026 African Energy Bank. All rights reserved. Supranational Institution of APPO &amp; Member States.
           </p>
         </div>
       </footer>
